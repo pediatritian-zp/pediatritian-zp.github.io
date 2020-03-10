@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Typography from '@material-ui/core/Typography';
 import MuiLink from '@material-ui/core/Link';
 import Lorem from '../components/lorem';
+import Section from '../components/section';
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,24 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Lorem/>
+    <Section>
+      <Lorem/>
+    </Section>
+    <Section>
+      <Lorem length={2}/>
+    </Section>
+    <Section>
+      <Lorem length={2}/>
+    </Section>
+    <Section>
+      <Lorem length={2}/>
+    </Section>
+    <Section>
+      <Lorem length={2}/>
+    </Section>
+    <Section>
+      <Lorem length={2}/>
+    </Section>
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <MuiLink color="inherit" href="https://material-ui.com/">
