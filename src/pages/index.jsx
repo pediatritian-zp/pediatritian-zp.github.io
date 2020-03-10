@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import MuiLink from '@material-ui/core/Link';
 import Lorem from '../components/lorem';
 import Section from '../components/section';
+import Rating from '@material-ui/lab/Rating';
+import Grid from '@material-ui/core/Grid';
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +20,23 @@ const IndexPage = () => (
       <Image />
     </div>
     <Section>
-      <Lorem/>
+      <Grid container spacing={3} justify='center' alignItems='center' alignContent='center'>
+        <Grid item xs={12} md={4}>
+          <h3>Well</h3>
+          <Lorem/>
+          <Rating value={5} readOnly/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <h3>Wall</h3>
+          <Lorem/>
+          <Rating value={5} readOnly/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <h3>Will</h3>
+          <Lorem/>
+          <Rating value={5} readOnly/>
+        </Grid>
+      </Grid>
     </Section>
     <Section>
       <Lorem length={2}/>
