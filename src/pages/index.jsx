@@ -9,6 +9,7 @@ import Lorem from '../components/lorem';
 import Section from '../components/section';
 import Rating from '@material-ui/lab/Rating';
 import Grid from '@material-ui/core/Grid';
+import Avatar from '@material-ui/core/Avatar';
 
 const IndexPage = () => (
   <Layout>
@@ -20,11 +21,18 @@ const IndexPage = () => (
       <Image />
     </div>
     <Section>
-      <Grid container spacing={3} justify='center' alignItems='center' alignContent='center'>
+      <Grid container spacing={3}>
         <Grid item xs={12} md={4}>
-          <h3>Well</h3>
-          <Lorem/>
+          <p>Some testimonials</p>
           <Rating value={5} readOnly/>
+          <Grid container spacing={1} alignItems='center'>
+            <Grid item>
+              User Name
+            </Grid>
+            <Grid item>
+              <Avatar src='/'/>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item xs={12} md={4}>
           <h3>Wall</h3>
