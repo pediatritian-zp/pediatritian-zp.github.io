@@ -8,37 +8,18 @@ import MuiLink from '@material-ui/core/Link';
 import Lorem from '../components/lorem';
 import Section from '../components/section';
 import Reviews from '../components/reviews';
+import Sections from '../components/sections';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Section>
+    <SEO title="Галич Андрей Радиевич" />
 
-    </Section>
+    <Sections/>
+
     <Section>
       <Reviews/>
     </Section>
-    <Section>
-      <Lorem length={2}/>
-    </Section>
-    <Section>
-      <Lorem length={2}/>
-    </Section>
-    <Section>
-      <Lorem length={2}/>
-    </Section>
-    <Section>
-      <Lorem length={2}/>
-    </Section>
-    <Section>
-      <Lorem length={2}/>
-    </Section>
+
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <MuiLink color="inherit" href="https://material-ui.com/">

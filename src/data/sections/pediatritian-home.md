@@ -1,6 +1,9 @@
 ---
 type: section
 order: 10
+
+image: '/some/img.jpg'
+imagePosition: 'left'
 ---
 
 # Вызов педиатра на дом
