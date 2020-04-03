@@ -7,9 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import MuiLink from '@material-ui/core/Link';
 import Lorem from '../components/lorem';
 import Section from '../components/section';
-import Rating from '@material-ui/lab/Rating';
-import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
 import Reviews from '../components/reviews';
 
 const IndexPage = () => (
