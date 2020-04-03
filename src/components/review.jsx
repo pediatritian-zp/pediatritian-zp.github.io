@@ -18,7 +18,6 @@ const Review = ({entry}) => (
       </Grid>
       <Rating value={5} readOnly/>
     </Grid>
-
   </Grid>
 );
 
