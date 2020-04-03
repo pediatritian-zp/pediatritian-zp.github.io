@@ -4,7 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 
 const Review = ({entry}) => (
-  <Grid item xs={12} md={4}>
+  <Grid item xs={12} md={4}
+        style={{justifyContent: 'space-between', flexDirection: 'column', display: 'flex'}}>
     <Grid item>
       <div dangerouslySetInnerHTML={{ __html: entry.html }} />
     </Grid>
@@ -15,9 +16,9 @@ const Review = ({entry}) => (
       <Grid item xs={10} style={{alignItems: 'flex-end', display: 'flex'}}>
         User Name
       </Grid>
+      <Rating value={5} readOnly/>
     </Grid>
 
-    <Rating value={5} readOnly/>
   </Grid>
 );
 
