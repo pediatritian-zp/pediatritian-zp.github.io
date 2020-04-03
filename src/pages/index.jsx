@@ -14,11 +14,19 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Галич Андрей Радиевич" />
 
+    <div style={{backgroundColor:'green'}}>
+      `Fixed` плашка контактов
+    </div>
+
     <Sections/>
 
     <Section>
       <Reviews/>
     </Section>
+
+    <div style={{backgroundColor:'green'}}>
+      Фотографии - разделом, или вставить сбоку в Sections
+    </div>
 
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
