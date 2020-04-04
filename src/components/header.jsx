@@ -5,8 +5,9 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      // background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      color: '#85BF4B',
     }}
   >
     <div
@@ -16,17 +17,14 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+      <h1 style={{
+        margin: 0,
+        color: '#222F40',
+      }}>
           {siteTitle}
-        </Link>
       </h1>
+
+      <h3>Галич Андрей Радиевич</h3>
     </div>
   </header>
 )
