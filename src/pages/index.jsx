@@ -8,6 +8,7 @@ import Section from '../components/section';
 import Reviews from '../components/reviews';
 import Sections from '../components/sections';
 import Contacts from '../components/contacts';
+import Gallery from '../components/gallery';
 
 const IndexPage = () => (
   <Layout>
@@ -21,9 +22,7 @@ const IndexPage = () => (
       <Reviews/>
     </Section>
 
-    <div style={{backgroundColor:'green'}}>
-      Фотографии - разделом, или вставить сбоку в Sections
-    </div>
+    <Gallery/>
 
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}

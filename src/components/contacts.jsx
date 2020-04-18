@@ -48,13 +48,4 @@ const Contacts = () =>(<StaticQuery
   )}}
 />);
 
-//   (
-//   <div>
-//     aaa
-//     <p>adf</p>
-//     <p>gbgfn</p>
-//     <p>wrgtgt</p>
-//   </div>
-// );
-
 export default Contacts;

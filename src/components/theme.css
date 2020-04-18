@@ -8,6 +8,10 @@ h3, h4 {
   /*color: #68748C;*/
 }
 
+.ReactGridGallery_tile {
+  background: none!important;
+}
+
 
 /* Color Theme Swatches in Hex */
 .Yarrah-1-hex { color: #7E498C; }
