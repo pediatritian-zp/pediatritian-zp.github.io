@@ -1,6 +1,7 @@
 import React from "react"
 import {graphql, StaticQuery} from 'gatsby';
 import Grid from '@material-ui/core/Grid';
+import {Hidden} from '@material-ui/core';
 
 const Contacts = () =>(<StaticQuery
   query={graphql`
@@ -41,9 +42,11 @@ const Contacts = () =>(<StaticQuery
       <Grid item>
         {info.description}: {info.phone}
       </Grid>
-      <Grid item>
-        {info.name}
-      </Grid>
+      <Hidden smDown>
+        <Grid item>
+          {info.name}
+        </Grid>
+      </Hidden>
     </Grid>
   )}}
 />);
