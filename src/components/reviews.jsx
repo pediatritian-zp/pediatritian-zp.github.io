@@ -16,6 +16,8 @@ const Reviews = () => (<StaticQuery
               frontmatter {
                 type
                 order
+                customerName
+                avatarFile
               }
             }
           }

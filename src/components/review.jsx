@@ -1,5 +1,4 @@
 import React from "react"
-import Rating from '@material-ui/lab/Rating';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 
@@ -14,9 +13,8 @@ const Review = ({entry}) => (
         <Avatar src='/'/>
       </Grid>
       <Grid item xs={10} style={{alignItems: 'flex-end', display: 'flex'}}>
-        User Name
+        { entry.frontmatter.customerName }
       </Grid>
-      <Rating value={5} readOnly/>
     </Grid>
   </Grid>
 );
