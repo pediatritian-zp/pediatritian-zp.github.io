@@ -2,8 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Typography from '@material-ui/core/Typography';
-import MuiLink from '@material-ui/core/Link';
 import Section from '../components/section';
 import Reviews from '../components/reviews';
 import Sections from '../components/sections';
@@ -23,15 +21,6 @@ const IndexPage = () => (
     </Section>
 
     <Gallery/>
-
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <MuiLink color="inherit" href="https://material-ui.com/">
-        Your Website
-      </MuiLink>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
   </Layout>
 );
 

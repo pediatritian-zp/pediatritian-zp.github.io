@@ -12,6 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import "./theme.css"
+import MuiLink from '@material-ui/core/Link';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import Typography from '@material-ui/core/Typography';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,10 +38,23 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer
+          style={{
+            marginTop: `2em`,
+          }}
+        >
+          <Typography variant="body2" color="textSecondary" align="center">
+            <MuiLink color="inherit" href="https://github.com/lifecoderua">
+              Site developed with
+              <FavoriteIcon
+                style={{
+                  fontSize: '0.7em',
+                  marginLeft: '5px',
+                  color: 'rgb(220, 0, 78)',
+                }}
+              />
+            </MuiLink>
+          </Typography>
         </footer>
       </div>
     </>
