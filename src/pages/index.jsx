@@ -7,6 +7,7 @@ import Reviews from '../components/reviews';
 import Sections from '../components/sections';
 import Contacts from '../components/contacts';
 import Gallery from '../components/gallery';
+import Map from '../components/map';
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,10 @@ const IndexPage = () => (
     <Contacts/>
 
     <Sections/>
+
+    <Section>
+      <Map/>
+    </Section>
 
     <Section>
       <Reviews/>
