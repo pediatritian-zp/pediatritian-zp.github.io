@@ -49,6 +49,12 @@ module.exports = {
         plugins: [],
       },
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: 'UA-180755208-1',
+      },
+    },
     // gatsby-transformer-json for json configs if needed
   ],
 }
