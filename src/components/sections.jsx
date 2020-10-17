@@ -27,8 +27,8 @@ const Sections = () => (<StaticQuery
   render={data => (
     <div>
       { data.allMarkdownRemark.edges.map( ({ node }) =>
-        <Section>
-          <SectionContent key={node.id} entry={node} />
+        <Section key={node.id}>
+          <SectionContent key={node.order} entry={node} />
         </Section>
       )}
     </div>
